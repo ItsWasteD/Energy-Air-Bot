@@ -3,16 +3,15 @@
   "version": "1.0",
   "description": "Automated bot for the 'Energy Air Game'",
   "manifest_version": 2,
-  "default_locale": "de",
   "author": "David Roth",
   "homepage_url": "https://game.energy.ch/",
 
   "background": {
     "scripts": ["getNumber.js"],
-    "persistent": "false"
+    "persistent": false
   },
 
-  "permissions": ["storage"],
+  "permissions": ["storage","declarativeContent"],
 
   "page_action": {
     "default_popup": "popup.html"

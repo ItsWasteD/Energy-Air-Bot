@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <style>
 
-    </style>
+  </style>
 </head>
 <body>
-    <input type="text" id="phone">
-    <label for="phone">Telefonnummer</label>
+  <label for="phone">Telefonnummer</label>
+  <input type="text" id="phone" name="phone">
+  <button onclick="saveNumber()">Save</button>
+  <script>
+  function saveNumber() {
+    var number = $('#phone').val();
+    chrome.storage.sync.set({phone: number}, () => {
+      console.log("Number saved!");
+    });
+
+    $('#inlineFormInput').val(number);
+    var form = $('.form-inline send-code')
+    console.log(form);
+  }
+  </script>
 </body>
 </html>
