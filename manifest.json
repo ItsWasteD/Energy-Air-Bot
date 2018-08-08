@@ -1,0 +1,23 @@
+{
+  "name": "Energy Air Bot",
+  "version": "1.0",
+  "description": "Automated bot for the 'Energy Air Game'",
+  "manifest_version": 2,
+  "default_locale": "de",
+  "author": "David Roth",
+  "homepage_url": "https://game.energy.ch/",
+
+  "background": {
+    "scripts": ["getNumber.js"],
+    "persistent": "false"
+  },
+
+  "permissions": ["storage"],
+
+  "icons": {
+    "16": "images/favicon_16.png",
+    "32": "images/favicon_32.png",
+    "48": "images/favicon_48.png",
+    "128": "images/favicon_128.png"
+  }
+}
