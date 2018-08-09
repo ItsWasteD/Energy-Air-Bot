@@ -6,16 +6,12 @@
   "author": "David Roth",
   "homepage_url": "https://game.energy.ch/",
 
-  "background": {
-    "scripts": ["getNumber.js"],
-    "persistent": false
-  },
+  "content_scripts": [{
+    "matches": ["http://*.energy.ch/*", "https://*.energy.ch/*"],
+    "js": ["NRJ.js"]
+    }],
 
-  "permissions": ["storage","declarativeContent"],
-
-  "page_action": {
-    "default_popup": "popup.html"
-  },
+  "permissions": ["http://*.energy.ch/*", "https://*.energy.ch/*"],
 
   "icons": {
     "16": "images/favicon_16.png",
