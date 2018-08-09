@@ -7,6 +7,11 @@ This bot will do the Energy Air Quiz/Game for you really fast. It works but its 
 3. Go to [game.energy.ch](game.energy.ch) enter your phone number and then wait until you receive the pin on your phone.
 4. Enter the PIN press the button and the bot will automatically do his job.
 
+## Help me!
+If you see any questions in the `questions` variable, that have a false answer please let me know! Or create a new Issue.
+
+Thanks for your help :)
+
 ## Author
 * David Roth
 
