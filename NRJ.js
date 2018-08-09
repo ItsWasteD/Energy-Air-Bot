@@ -1,5 +1,10 @@
 function eAirGame() {
 
+  //Faster page loading
+  if(document.head != null) {
+    document.head.parentNode.removeChild(document.head);
+  }
+
   var timeout = 500;
 
   var questions = [
@@ -75,11 +80,14 @@ function eAirGame() {
     }
 
     function answerQuestion() {
-      var q = document.getElementsByClassName('mobile-padding-question')[1].innerText;
-      var answer = findAnswer(q);
-      console.log(q + " : " + answer);
-      document.getElementById(answer).click();
-      document.getElementById("next-question").click();
+      var qElem = document.getElementsByClassName('mobile-padding-question')[1];
+      if(qElem != undefined) {
+        var q = qElem.innerText;
+        var answer = findAnswer(q);
+        console.log(q + " : " + answer);
+        document.getElementById(answer).click();
+        document.getElementById("next-question").click();
+      }
     }
 
     function findAnswer(q) {
@@ -95,10 +103,16 @@ function eAirGame() {
 
   function checkFail() {
     var btn = document.getElementsByClassName("btn btn-primary game-button btn-lg")[0];
+    var loseBtn = document.getElementById("lose");
+
     var title = btn.parentElement.children[0].innerText;
 
     if(btn != undefined && title == "Leider verloren") {
       btn.click();
+    }
+
+    if(loseBtn != undefined) {
+        loseBtn.click();
     }
   }
 
