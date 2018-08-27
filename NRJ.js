@@ -58,7 +58,7 @@ function eAirGame() {
     {question: "Welches Agentenduo gibt ab dem 30. August so richtig Gas?", answer: "Mila Kunis und Kate McKinnon"},
     {question: "Wo hat Audrey den USB-Stick versteckt?", answer: "Unter der Zunge"},
     {question: "Was verstecken Audrey und Morgan vor der CIA?", answer: "Einen USB-Stick mit vertraulichen Informationen"},
-    {question: "Mit welchem Hollywoodstar ist Mila Kunis verheiratet?", answer: "Ashton Kutscher"},
+    {question: "Mit welchem Hollywoodstar ist Mila Kunis verheiratet?", answer: "Ashton Kutcher"},
     {question: "Ab wann ist der Film BAD SPIES in den Schweizer Kinos zu sehen?", answer: "Ab 30. August 2018"},
     {question: "In welcher Hauptstadt Europas machen die BAD SPIES keinen Halt?", answer: "Wien"},
     {question: "Aus welchem Film ist Mila Kunis bekannt?", answer: "Bad Moms"}];
